@@ -28,7 +28,7 @@
       font-size: 14px;
     }
 
-    input[type="text"], input[type="email"], textarea {
+    input[type="text"], input[type="email"] {
       display: block;
       width: 100%;
       padding: 10px 10px;
@@ -49,6 +49,16 @@
       &:focus {
         color: $primary;
         background: $grey-light;
+      }
+    }
+    textarea {
+      width: 100%;
+      padding: 10px 10px;
+      border: 2px solid $grey-light;
+      border-radius: 3px;
+
+      &:focus {
+        color: $primary;
       }
     }
   }

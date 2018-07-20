@@ -732,6 +732,22 @@ header.scrolled nav {
       background-color: rgba(60, 60, 60, 0.4);
       margin: 10px auto 0; }
 
+.footer {
+  background-color: rgba(244, 244, 248, 0.4); }
+
+.pics {
+  line-height: 3em;
+  padding-top: 30px; }
+
+.bottom {
+  padding-top: 100%;
+  text-align: center; }
+
+.contactinfo {
+  color: #3c3c3c; }
+  .contactinfo a {
+    color: #3c3c3c; }
+
 .contact-bar {
   position: fixed;
   width: 100%;
@@ -794,7 +810,7 @@ header.scrolled nav {
       color: #f4f4f8;
       font-weight: 500;
       font-size: 14px; }
-    .contact form input[type="text"], .contact form input[type="email"], .contact form textarea {
+    .contact form input[type="text"], .contact form input[type="email"] {
       display: block;
       width: 100%;
       padding: 10px 10px;
@@ -807,8 +823,15 @@ header.scrolled nav {
       -ms-transition: all .3s ease-in-out;
       -o-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out; }
-      .contact form input[type="text"]::placeholder, .contact form input[type="email"]::placeholder, .contact form textarea::placeholder {
+      .contact form input[type="text"]::placeholder, .contact form input[type="email"]::placeholder {
         color: rgba(244, 244, 248, 0.7); }
-      .contact form input[type="text"]:focus, .contact form input[type="email"]:focus, .contact form textarea:focus {
+      .contact form input[type="text"]:focus, .contact form input[type="email"]:focus {
         color: #db2b39;
         background: #f4f4f8; }
+    .contact form textarea {
+      width: 100%;
+      padding: 10px 10px;
+      border: 2px solid #f4f4f8;
+      border-radius: 3px; }
+      .contact form textarea:focus {
+        color: #db2b39; }
