@@ -6,8 +6,8 @@ $(document).ready(function() {
 
         // perform animated scrolling by getting top-position of target-element and set it as scroll target
         $('html, body').stop().animate({
-            scrollTop: $(target).offset().top
-        }, 200, function() {
+            scrollTop: $(target).offset().top -80
+        }, 800, function() {
             location.hash = target; //attach the hash (#jumptarget) to the pageurl
         });
 
@@ -29,6 +29,12 @@ $(window).scroll(function() {
 				$('header').addClass('scrolled');
 		} else {
 				$('header').removeClass('scrolled');
+		}
+
+    if (scrollDistance >= 1900) {
+				$('.contact-bar').addClass('hidden');
+		} else {
+				$('.contact-bar').removeClass('hidden');
 		}
 
     // Assign active class to nav links while scolling

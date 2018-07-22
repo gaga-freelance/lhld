@@ -31,7 +31,7 @@ header {
   	a {
     	color: $text-default;
     	text-decoration: none;
-    	display: inline-block;
+    	display: block;
       font-weight: 500;
       text-transform: uppercase;
       font-size: 22px;
@@ -62,5 +62,31 @@ header.scrolled {
   }
   nav {
     top: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    .logo img {
+      width: 200px;
+    }
+  }
+
+  nav {
+    top: 20px !important;
+
+    a {
+      font-size: 18px !important;
+    }
+  }
+
+  header.scrolled nav {
+    top: 10px !important;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  nav a {
+    display: inline-block !important;
   }
 }

@@ -6,6 +6,7 @@
   bottom: 0;
   text-align: right;
   color: $text-light-70;
+  z-index: 1;
 
   .container {
     position: relative;
@@ -16,7 +17,7 @@
     font-size: 14px;
   }
 
-  .something {
+  .quickinfo {
     position: relative;
   }
 
@@ -49,5 +50,33 @@
       }
     }
   }
+}
 
+@media only screen and (max-width:768px) {
+  .contact-bar {
+    padding: 0px 5px 10px;
+
+    i {
+      display: none;
+    }
+    span {
+      display: none;
+    }
+
+    .col-2 {
+      width: 25%;
+      margin: 0;
+      font-size: 12px
+    }
+
+    .col-3 {
+      width: 50%;
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+
+  .contact-bar.hidden {
+    display: block !important;
+  }
 }
