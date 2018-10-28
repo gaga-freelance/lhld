@@ -660,17 +660,17 @@ header.scrolled .logo {
 header.scrolled nav {
   top: 30px; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 999px) {
   header .logo img {
     width: 200px; }
   nav {
     top: 20px !important; }
     nav a {
-      font-size: 18px !important; }
+      font-size: 14px !important; }
   header.scrolled nav {
     top: 10px !important; } }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1000px) {
   nav a {
     display: inline-block !important; } }
 
@@ -706,6 +706,22 @@ header.scrolled nav {
       background: rgba(244, 244, 248, 0.78);
       padding: 1px 10px;
       border-radius: 0 0 5px 5px; }
+
+.about {
+  background: rgba(244, 244, 248, 0.4);
+  text-align: center;
+  font-weight: 500;
+  padding: 10px 0 20px; }
+  .about h1 {
+    color: #3c3c3c;
+    position: relative; }
+    .about h1:after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 50px;
+      background-color: rgba(60, 60, 60, 0.4);
+      margin: 10px auto 0; }
 
 .services {
   background: #db2b39;
